@@ -1,0 +1,17 @@
+﻿#dropSection {
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+}
+
+#btnUpload {
+    display: none;
+}
+
+.active {
+    background-color: yellow !important;
+}
+
+.form-button {
+    padding-top: 1rem;
+}

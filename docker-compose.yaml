@@ -1,0 +1,37 @@
+version: "3.4"
+services:
+  doc-management-web:
+        image: doc-management-web
+        container_name: doc-management-web
+        hostname: doc-management-web
+        build: 
+            context: ./src
+            dockerfile: doc-managements.Web/Dockerfile
+        environment:
+            ASPNETCORE_ENVIRONMENT: Staging
+        ports: 
+            - "5000:80"
+        depends_on: 
+            - sqlserver
+        networks:
+            - default
+            - localhost
+
+  sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        container_name: sqlserver
+        hostname: 'sqlserver'
+        environment:
+            SA_PASSWORD: "CZyEajm4wR6CJGAA"
+            ACCEPT_EULA: "Y"
+        ports:
+            - "1433:1433" 
+        expose:
+        - 1433           
+        networks:
+            - localhost
+
+networks:
+    localhost:
+        name: localhost
+          

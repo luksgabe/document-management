@@ -1,0 +1,75 @@
+﻿@using DocManagement.Core.Enums
+@using DocManagements.Web.Extensions
+@model DocManagements.AppServices.ViewModels.DocumentViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style type="text/css">
+    .file-name {
+        color: darkred;
+    }
+</style>
+
+<h1>Editar</h1>
+
+<h4>Editar um documento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Document" asp-action="Edit" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                @*<input asp-for="Status" class="form-control" />*@
+                <select asp-for="Status" 
+                    class="form-control" 
+                    asp-items="Html.GetEnumSelectList<Status>()">
+                    <option>Select type ...</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="File" class="control-label"></label>
+                <input asp-for="File" class="form-control" type="file" />
+                <span asp-validation-for="File" class="text-danger"></span>
+                @if(Model.fileName != null && Model.fileName.Length > 0)
+                {
+                    <p>
+                        <strong>Arquivo atual</strong>: <span class="file-name"> @Model.fileName </span>
+                    </p>
+                }
+                
+            </div>
+            <div class="form-group">
+                @Html.ActionLink("Baixar Arquivo", "Download", new { Id = Model.DocumentId })
+            </div>
+
+            <input asp-for="DocumentId" type="hidden" class="form-control" />
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

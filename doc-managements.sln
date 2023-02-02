@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentation", "0-Presentation", "{68D23622-C3CA-4A10-AD32-7ED4BE6A150D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Domain", "2-Domain", "{A3CED770-6117-4357-BF86-0E6A30E817C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infra", "3-Infra", "{9B95E1F0-381C-445B-981C-48F118EFB69E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1-Infra.Data", "3.1-Infra.Data", "{8C3F3668-0607-42F8-89B5-020C96F3E2ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2-Infra.CrossCutting", "3.2-Infra.CrossCutting", "{1DD561D8-860C-475D-8A2D-0DB800FAA740}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{F6316134-0BDB-473E-B6F5-757B0F20837C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagements.Web", "src\doc-managements.Web\DocManagements.Web.csproj", "{7C994947-07AA-49A6-A988-A693E88AAA60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagements.AppServices", "src\DocManagements.AppServices\DocManagements.AppServices.csproj", "{22469534-059F-4955-99D5-7A116238EF4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagement.Core", "src\DocManagement.Core\DocManagement.Core.csproj", "{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagements.Infra.Data", "src\DocManagements.Infra.Data\DocManagements.Infra.Data.csproj", "{06D55A88-81F0-46A0-80D8-441652CFC384}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagements.Infra.CrossCutting.IoT", "src\DocManagements.Infra.CrossCutting.IoT\DocManagements.Infra.CrossCutting.IoT.csproj", "{A7CCB263-57C4-4468-87DE-07F1799A8C1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocManagements.Api", "DocManagements.Api\DocManagements.Api.csproj", "{EADA0717-B987-4800-965C-4B8991A58BD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C994947-07AA-49A6-A988-A693E88AAA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C994947-07AA-49A6-A988-A693E88AAA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C994947-07AA-49A6-A988-A693E88AAA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C994947-07AA-49A6-A988-A693E88AAA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22469534-059F-4955-99D5-7A116238EF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22469534-059F-4955-99D5-7A116238EF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22469534-059F-4955-99D5-7A116238EF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22469534-059F-4955-99D5-7A116238EF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D55A88-81F0-46A0-80D8-441652CFC384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D55A88-81F0-46A0-80D8-441652CFC384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D55A88-81F0-46A0-80D8-441652CFC384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D55A88-81F0-46A0-80D8-441652CFC384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADA0717-B987-4800-965C-4B8991A58BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADA0717-B987-4800-965C-4B8991A58BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADA0717-B987-4800-965C-4B8991A58BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADA0717-B987-4800-965C-4B8991A58BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C3F3668-0607-42F8-89B5-020C96F3E2ED} = {9B95E1F0-381C-445B-981C-48F118EFB69E}
+		{1DD561D8-860C-475D-8A2D-0DB800FAA740} = {9B95E1F0-381C-445B-981C-48F118EFB69E}
+		{7C994947-07AA-49A6-A988-A693E88AAA60} = {68D23622-C3CA-4A10-AD32-7ED4BE6A150D}
+		{22469534-059F-4955-99D5-7A116238EF4D} = {F6316134-0BDB-473E-B6F5-757B0F20837C}
+		{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257} = {A3CED770-6117-4357-BF86-0E6A30E817C1}
+		{06D55A88-81F0-46A0-80D8-441652CFC384} = {8C3F3668-0607-42F8-89B5-020C96F3E2ED}
+		{A7CCB263-57C4-4468-87DE-07F1799A8C1B} = {1DD561D8-860C-475D-8A2D-0DB800FAA740}
+		{EADA0717-B987-4800-965C-4B8991A58BD8} = {68D23622-C3CA-4A10-AD32-7ED4BE6A150D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C4F5ABF-1634-44A8-8D63-81908AF8260F}
+	EndGlobalSection
+EndGlobal
