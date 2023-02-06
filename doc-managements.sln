@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagements.Infra.Data",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocManagements.Infra.CrossCutting.IoT", "src\DocManagements.Infra.CrossCutting.IoT\DocManagements.Infra.CrossCutting.IoT.csproj", "{A7CCB263-57C4-4468-87DE-07F1799A8C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocManagements.Api", "DocManagements.Api\DocManagements.Api.csproj", "{EADA0717-B987-4800-965C-4B8991A58BD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocManagements.AppServices.Test", "src\DocManagements.AppServices.Test\DocManagements.AppServices.Test.csproj", "{987EF15E-0329-441A-AF68-207B4AC1F3B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,10 @@ Global
 		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7CCB263-57C4-4468-87DE-07F1799A8C1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EADA0717-B987-4800-965C-4B8991A58BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EADA0717-B987-4800-965C-4B8991A58BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EADA0717-B987-4800-965C-4B8991A58BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EADA0717-B987-4800-965C-4B8991A58BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987EF15E-0329-441A-AF68-207B4AC1F3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987EF15E-0329-441A-AF68-207B4AC1F3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987EF15E-0329-441A-AF68-207B4AC1F3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987EF15E-0329-441A-AF68-207B4AC1F3B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,7 +69,7 @@ Global
 		{E67AA05E-99E9-4DE6-8BC0-B67C1C9E4257} = {A3CED770-6117-4357-BF86-0E6A30E817C1}
 		{06D55A88-81F0-46A0-80D8-441652CFC384} = {8C3F3668-0607-42F8-89B5-020C96F3E2ED}
 		{A7CCB263-57C4-4468-87DE-07F1799A8C1B} = {1DD561D8-860C-475D-8A2D-0DB800FAA740}
-		{EADA0717-B987-4800-965C-4B8991A58BD8} = {68D23622-C3CA-4A10-AD32-7ED4BE6A150D}
+		{987EF15E-0329-441A-AF68-207B4AC1F3B4} = {F6316134-0BDB-473E-B6F5-757B0F20837C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C4F5ABF-1634-44A8-8D63-81908AF8260F}
