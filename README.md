@@ -26,6 +26,8 @@
 - ``DDD``
 - ``Dominios Ricos``
 - ``Principios SOLID``
+- ``Conteinerização via Docker``
+- ``Testes unitários com xunit``
 
 # 🛠️ Abrir e rodar o projeto
 
