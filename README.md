@@ -33,3 +33,8 @@
 <p>Executar o projeto através da solution.</p>
 <p>Ao startar o projeto pela primeira vez o banco de dados será criado.</p>
 
+<p>Executar no docker</p>
+<p>Para executar o projeto no docker, precisa ter o mesmo instalado na sua maquina com a virtualização habilitada.</p>
+<p>Vá até a pasta da raiz do projeto e execute o comando: docker-compose up</p>
+<p>Aguarde até o docker criar a imagem e subir os containers. Após isso, ir no docker desktop e startar o container "doc-management-web"</p>
+
